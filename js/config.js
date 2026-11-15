@@ -66,7 +66,7 @@ window.WEDDING_CONFIG = {
      (Haldi, Mehendi or Sangeet can be added back with icons turmeric / mehendi / veena) */
   events: [
     {
-      enabled: false,
+      enabled: true,
       name: "Pellikuthuru",
       telugu: "పెళ్లికూతురు",
       start: "2027-02-07T09:00:00+05:30",
@@ -78,7 +78,7 @@ window.WEDDING_CONFIG = {
       icon: "bangles",
     },
     {
-      enabled: false,
+      enabled: true,
       name: "Pellikoduku",
       telugu: "పెళ్లికొడుకు",
       start: "2027-02-08T09:00:00+05:30",
