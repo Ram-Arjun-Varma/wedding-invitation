@@ -401,8 +401,8 @@ body.is-entered .nav { transform: none; }
 .card__corner--br { bottom: 18px; right: 18px; transform: scale(-1); }
 .card__inner { position: relative; z-index: 2; display: grid; gap: .9rem; padding: 0 .5rem; }
 .card__srirastu { font-size: clamp(1rem, 4.6vw, 1.35rem); font-weight: 600; color: var(--maroon); letter-spacing: .04em; margin-bottom: -.2rem; }
-.card__ganesha { display: block; width: 150px; margin: .3rem auto 0; filter: drop-shadow(0 8px 12px rgba(93, 68, 27, .3)); }
-.card__ganesha img { width: 100%; height: auto; }
+.card__ganesha { display: block; justify-self: center; width: 150px; max-width: 60%; margin: .3rem auto 0; filter: drop-shadow(0 8px 12px rgba(93, 68, 27, .3)); }
+.card__ganesha img { display: block; width: 100% !important; height: auto !important; max-width: 100%; aspect-ratio: 480 / 683; object-fit: contain; }
 .card__invocation { color: var(--vermilion); font-size: 1.05rem; margin-top: -.4rem; }
 .card__lead { font-size: 1.18rem; line-height: 1.55; color: #4a342a; font-style: italic; }
 .card__couple { display: grid; gap: .1rem; margin: .8rem 0 .2rem; }
