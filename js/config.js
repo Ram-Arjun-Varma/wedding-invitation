@@ -66,7 +66,7 @@ window.WEDDING_CONFIG = {
      (Haldi, Mehendi or Sangeet can be added back with icons turmeric / mehendi / veena) */
   events: [
     {
-      enabled: true,
+      enabled: false,
       name: "Pellikuthuru",
       telugu: "పెళ్లికూతురు",
       start: "2027-02-07T09:00:00+05:30",
@@ -78,7 +78,7 @@ window.WEDDING_CONFIG = {
       icon: "bangles",
     },
     {
-      enabled: true,
+      enabled: false,
       name: "Pellikoduku",
       telugu: "పెళ్లికొడుకు",
       start: "2027-02-08T09:00:00+05:30",
@@ -88,6 +88,19 @@ window.WEDDING_CONFIG = {
       description:
         "Arjun is blessed by the elders and prepared for the wedding with traditional rituals and a joyful family gathering.",
       icon: "garland",
+    },
+    {
+      enabled: true,
+      name: "Upanayanam",
+      telugu: "ఉపనయనం",
+      start: "2027-02-11T11:05:00+05:30",
+      end: "2027-02-11T14:00:00+05:30",
+      venue: "Lee Paradise",
+      address: "100 Ft Ring Road, Near Ice Factory Junction, Vizianagaram, Andhra Pradesh",
+      mapQuery: "Lee Paradise Convention, Vizianagaram, Andhra Pradesh 535002",
+      description:
+        "Arjun’s sacred-thread ceremony, performed with Vedic chants and the blessings of the elders on the wedding day.",
+      icon: "thread",
     },
     {
       enabled: true,
