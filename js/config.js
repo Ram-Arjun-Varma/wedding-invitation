@@ -55,7 +55,7 @@ window.WEDDING_CONFIG = {
   // Main venue (used in the Venue section)
   venue: {
     name: "Lee Paradise Convention",
-    address: "100 Ft Ring Road, Krishnarajupuram, Ice Factory Road, Mayuri Junction Area, Vizianagaram, Andhra Pradesh 535002",
+    address: "100 Ft Ring Road, Near Ice Factory Junction, Vizianagaram, Andhra Pradesh",
     mapQuery: "Lee Paradise Convention, Vizianagaram, Andhra Pradesh 535002", // what Google Maps searches for
     note: "The wedding ceremony and the reception will both be held here. Assistance will be available for elders.",
     photo: "", // optional venue photograph, e.g. "assets/images/venue.webp"
@@ -96,7 +96,7 @@ window.WEDDING_CONFIG = {
       start: "2027-02-11T09:00:00+05:30",
       end: "2027-02-12T02:00:00+05:30",
       venue: "Lee Paradise Convention",
-      address: "100 Ft Ring Road, Krishnarajupuram, Ice Factory Road, Mayuri Junction Area, Vizianagaram, Andhra Pradesh 535002",
+      address: "100 Ft Ring Road, Near Ice Factory Junction, Vizianagaram, Andhra Pradesh",
       mapQuery: "Lee Paradise Convention, Vizianagaram, Andhra Pradesh 535002",
       description:
         "A day-long celebration leading up to the sacred sumuhurtham at 12:55 AM on 12 February — Jeelakarra Bellam, Mangalyadharanam and Talambralu, with traditional meals and festivities through the day and night.",
@@ -109,7 +109,7 @@ window.WEDDING_CONFIG = {
       start: "2027-02-11T19:00:00+05:30",
       end: "2027-02-11T22:30:00+05:30",
       venue: "Lee Paradise Convention", // same place as the wedding
-      address: "100 Ft Ring Road, Krishnarajupuram, Ice Factory Road, Mayuri Junction Area, Vizianagaram, Andhra Pradesh 535002",
+      address: "100 Ft Ring Road, Near Ice Factory Junction, Vizianagaram, Andhra Pradesh",
       mapQuery: "Lee Paradise Convention, Vizianagaram, Andhra Pradesh 535002",
       description: "Held at the wedding venue as part of the celebrations — join us for dinner, music and blessings as we begin our new life together.",
       icon: "lamp",
