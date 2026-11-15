@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Arjun &amp; Alekhya — Wedding Invitation · 11 February 2027</title>
+  <meta name="description" content="With the blessings of our families, Arjun and Alekhya invite you to celebrate their wedding on 11 February 2027. Ceremonies, venue, countdown and more." />
+  <meta name="theme-color" content="#641D2B" />
+  <meta name="color-scheme" content="light" />
+
+  <!-- Open Graph / WhatsApp preview — replace YOUR-SITE-URL after deploying (see README) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Arjun &amp; Alekhya" />
+  <meta property="og:title" content="Arjun &amp; Alekhya — Wedding Invitation" />
+  <meta property="og:description" content="Two hearts, one beautiful beginning. Join us on 11 February 2027." />
+  <meta property="og:url" content="https://YOUR-SITE-URL/" />
+  <meta property="og:image" content="https://YOUR-SITE-URL/assets/images/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Arjun &amp; Alekhya · 11 February 2027 — gold lettering on temple maroon" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Arjun &amp; Alekhya — Wedding Invitation" />
+  <meta name="twitter:description" content="Two hearts, one beautiful beginning. 11 February 2027." />
+  <meta name="twitter:image" content="https://YOUR-SITE-URL/assets/images/og-image.jpg" />
+
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/images/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Sans:wght@400;500;600&family=Noto+Serif+Telugu:wght@400;500;600&display=swap" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body class="is-locked is-loading">
+  <a class="skip-link" href="#main">Skip to the invitation</a>
+
+  <!-- Fullscreen particle canvas (gold dust, jasmine & marigold petals) -->
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <!-- ========================= SCENE 1 · LOADER ========================= -->
+  <div id="loader" class="loader" role="status" aria-live="polite">
+    <div class="loader__inner">
+      <div class="loader__bell" data-ornament="bell"></div>
+      <div class="loader__kolam" data-ornament="kolam"></div>
+      <div class="loader__diya" aria-hidden="true">
+        <span class="diya__flame"></span><span class="diya__bowl"></span>
+      </div>
+      <p class="loader__blessing" data-bind="loaderBlessing">With the blessings of Lord Sri Venkateswara</p>
+      <p class="loader__names" data-bind="namesShort">Arjun &amp; Alekhya</p>
+    </div>
+  </div>
+
+  <!-- ===================== SCENE 2 · TEMPLE ENTRANCE ==================== -->
+  <section id="entrance" class="entrance" aria-labelledby="entrance-title">
+    <div class="entrance__light" aria-hidden="true"></div>
+    <div class="entrance__frame" aria-hidden="true">
+      <div class="entrance__lintel"><div class="zari"></div></div>
+      <div class="entrance__toranam" data-ornament="toranam" data-count="16"></div>
+      <div class="entrance__bells"><span data-ornament="bell"></span><span data-ornament="bell"></span></div>
+    </div>
+
+    <div class="doors" aria-hidden="true">
+      <div class="door door--left">
+        <div class="door__panel"><span data-ornament="rosette"></span></div>
+        <div class="door__panel door__panel--tall"><span data-ornament="rosette"></span></div>
+        <div class="door__panel"><span data-ornament="rosette"></span></div>
+        <span class="door__handle"></span>
+      </div>
+      <div class="door door--right">
+        <div class="door__panel"><span data-ornament="rosette"></span></div>
+        <div class="door__panel door__panel--tall"><span data-ornament="rosette"></span></div>
+        <div class="door__panel"><span data-ornament="rosette"></span></div>
+        <span class="door__handle"></span>
+      </div>
+    </div>
+
+    <div class="entrance__lamp entrance__lamp--left lamp" data-ornament="lamp"></div>
+    <div class="entrance__lamp entrance__lamp--right lamp" data-ornament="lamp"></div>
+
+    <div class="plaque">
+      <div class="plaque__kalasham" data-ornament="kalasham"></div>
+      <p class="plaque__telugu" lang="te">శుభ వివాహ ఆహ్వానం</p>
+      <h2 id="entrance-title" class="plaque__title">Two Hearts, One Beautiful&nbsp;Beginning</h2>
+      <div class="plaque__divider" data-ornament="divider"></div>
+      <p class="plaque__text">With the blessings of our families, we invite you to celebrate our wedding.</p>
+      <button id="open-invitation" class="btn btn--gold btn--lg" type="button">
+        <span>Open the Invitation</span>
+      </button>
+      <button id="skip-entrance" class="link-btn" type="button">Skip animation</button>
+      <p class="plaque__hint">Tap to open · sound on for the temple bell</p>
+    </div>
+  </section>
+
+  <!-- ============================ NAVIGATION ============================ -->
+  <header class="nav" id="nav">
+    <a href="#home" class="nav__mono" aria-label="Arjun and Alekhya — back to top">
+      <span>A</span><i aria-hidden="true">❦</i><span>A</span>
+    </a>
+    <nav class="nav__links" id="nav-links" aria-label="Sections">
+      <a href="#invitation">Invitation</a>
+      <a href="#couple">Couple</a>
+      <a href="#events">Ceremonies</a>
+      <a href="#traditions">Traditions</a>
+      <a href="#venue">Venue</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="icon-btn share-btn" type="button" aria-label="Share invitation">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a3 3 0 1 0-2.8-4M6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm12 7a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM8.6 13.5l6.8 4M15.4 6.5l-6.8 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+      <button class="icon-btn nav__toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ======================== SCENE 3 · HERO ========================= -->
+    <section id="home" class="hero" aria-labelledby="hero-names">
+      <div class="hero__silk" aria-hidden="true"></div>
+      <div class="hero__gopuram parallax" data-speed="0.25" data-ornament="gopuram" aria-hidden="true"></div>
+      <div class="hero__garland" data-ornament="garlandSwag" data-count="4" aria-hidden="true"></div>
+      <div class="hero__strands" aria-hidden="true">
+        <span data-ornament="strand" data-count="14"></span><span data-ornament="strand" data-count="20"></span>
+        <span data-ornament="strand" data-count="11"></span><span data-ornament="strand" data-count="11"></span>
+        <span data-ornament="strand" data-count="20"></span><span data-ornament="strand" data-count="14"></span>
+      </div>
+      <div class="hero__lamp hero__lamp--left lamp" data-ornament="lamp" aria-hidden="true"></div>
+      <div class="hero__lamp hero__lamp--right lamp" data-ornament="lamp" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow"><span lang="te">శుభ వివాహం</span> · The Wedding of</p>
+        <div class="hero__divider" data-ornament="divider"></div>
+        <h1 id="hero-names" class="hero__names">
+          <span class="hero__name split" data-bind="groomUpper">ARJUN</span>
+          <span class="hero__amp" aria-label="and">&amp;</span>
+          <span class="hero__name split" data-bind="brideUpper">ALEKHYA</span>
+        </h1>
+        <div class="hero__divider hero__divider--flip" data-ornament="divider"></div>
+        <p class="hero__date"><time data-bind="dateUpper" datetime="2027-02-11">11 FEBRUARY 2027</time></p>
+        <p class="hero__telugu" lang="te" data-bind="namesTelugu">అర్జున్ ♥ అలేఖ్య</p>
+      </div>
+
+      <a href="#invitation" class="scroll-cue" aria-label="Scroll to the invitation">
+        <span class="scroll-cue__line"></span><span class="scroll-cue__text">Scroll</span>
+      </a>
+      <div class="zari zari--bottom" aria-hidden="true"></div>
+    </section>
+
+    <!-- =================== SCENE 4 · INVITATION CARD ==================== -->
+    <section id="invitation" class="section invitation" aria-labelledby="invitation-title">
+      <div class="kolam-bg" aria-hidden="true"></div>
+      <article class="card" id="invite-card">
+        <span class="card__corner card__corner--tl" data-ornament="corner"></span>
+        <span class="card__corner card__corner--tr" data-ornament="corner"></span>
+        <span class="card__corner card__corner--bl" data-ornament="corner"></span>
+        <span class="card__corner card__corner--br" data-ornament="corner"></span>
+        <div class="card__inner">
+          <p class="card__srirastu" lang="te" data-bind="srirastu">శ్రీరస్తు · శుభమస్తు · అవిఘ్నమస్తు</p>
+          <div class="card__ganesha" data-ornament="ganesha"></div>
+          <p class="card__invocation" lang="te" data-bind="invocation">ఓం శ్రీ గణేశాయ నమః</p>
+          <h2 id="invitation-title" class="visually-hidden">Wedding Invitation</h2>
+          <p class="card__lead reveal-line" data-bind="blessing"></p>
+          <p class="card__lead reveal-line" data-bind="invite"></p>
+          <div class="card__couple">
+            <p class="card__name reveal-line" data-bind="groomName">Arjun</p>
+            <p class="card__parents reveal-line" data-bind="groomParents"></p>
+            <p class="card__amp reveal-line" aria-hidden="true">&amp;</p>
+            <p class="card__name reveal-line" data-bind="brideName">Alekhya</p>
+            <p class="card__parents reveal-line" data-bind="brideParents"></p>
+          </div>
+          <div class="card__divider" data-ornament="divider"></div>
+          <p class="card__date reveal-line"><span data-bind="dateDisplay"></span><span lang="te" data-bind="dateTelugu"></span></p>
+          <p class="card__muhurtham reveal-line" data-bind="muhurthamDisplay"></p>
+          <p class="card__closing reveal-line" data-bind="closing"></p>
+          <p class="card__hosts reveal-line" data-bind="hosts"></p>
+        </div>
+      </article>
+    </section>
+
+    <!-- ===================== SCENE 5 · THE COUPLE ======================= -->
+    <section id="couple" class="section couple" aria-labelledby="couple-title">
+      <header class="section__head">
+        <p class="eyebrow" lang="te">వధూవరులు</p>
+        <h2 id="couple-title" class="section__title">The Bride &amp; Groom</h2>
+        <div class="section__divider" data-ornament="divider"></div>
+      </header>
+      <div class="couple__grid">
+        <article class="profile profile--groom" data-profile="groom">
+          <div class="profile__arch">
+            <div class="profile__photo" data-photo="groom"></div>
+            <div class="profile__frame" aria-hidden="true"></div>
+          </div>
+          <p class="profile__role">The Groom</p>
+          <h3 class="profile__name" data-bind="groomName">Arjun</h3>
+          <p class="profile__telugu" lang="te" data-bind="groomTelugu"></p>
+          <p class="profile__intro" data-bind="groomIntro"></p>
+        </article>
+        <div class="couple__knot" aria-hidden="true">
+          <div data-ornament="coinChain"></div>
+          <span class="couple__heart">&amp;</span>
+        </div>
+        <article class="profile profile--bride" data-profile="bride">
+          <div class="profile__arch">
+            <div class="profile__photo" data-photo="bride"></div>
+            <div class="profile__frame" aria-hidden="true"></div>
+          </div>
+          <p class="profile__role">The Bride</p>
+          <h3 class="profile__name" data-bind="brideName">Alekhya</h3>
+          <p class="profile__telugu" lang="te" data-bind="brideTelugu"></p>
+          <p class="profile__intro" data-bind="brideIntro"></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ====================== SCENE 6 · COUNTDOWN ======================= -->
+    <section id="countdown" class="section countdown" aria-labelledby="countdown-title">
+      <div class="countdown__pattern" aria-hidden="true"></div>
+      <header class="section__head section__head--light">
+        <p class="eyebrow">Counting the moments to the sumuhurtham</p>
+        <h2 id="countdown-title" class="section__title">Until We Say “I Do”</h2>
+        <div class="section__divider" data-ornament="divider"></div>
+      </header>
+      <div class="countdown__clock" id="countdown-clock" role="timer" aria-live="off">
+        <div class="cd-unit"><div class="cd-num" data-unit="days">000</div><span class="cd-label">Days</span></div>
+        <div class="cd-unit"><div class="cd-num" data-unit="hours">00</div><span class="cd-label">Hours</span></div>
+        <div class="cd-unit"><div class="cd-num" data-unit="minutes">00</div><span class="cd-label">Minutes</span></div>
+        <div class="cd-unit"><div class="cd-num" data-unit="seconds">00</div><span class="cd-label">Seconds</span></div>
+      </div>
+      <p class="visually-hidden" id="countdown-sr" aria-live="polite"></p>
+      <div class="countdown__done" id="countdown-done" hidden>
+        <p class="countdown__done-title">The auspicious day has arrived</p>
+        <p>Arjun &amp; Alekhya are now married — thank you for your love and blessings.</p>
+      </div>
+      <p class="countdown__date" data-bind="muhurthamDisplay"></p>
+    </section>
+
+    <!-- ======================= SCENE 7 · EVENTS ========================= -->
+    <section id="events" class="section events" aria-labelledby="events-title">
+      <header class="section__head">
+        <p class="eyebrow" lang="te">శుభ కార్యక్రమాలు</p>
+        <h2 id="events-title" class="section__title">Wedding Ceremonies</h2>
+        <div class="section__divider" data-ornament="divider"></div>
+        <p class="section__sub">Tap a ceremony to add it to your calendar or find your way there.</p>
+      </header>
+      <ol class="timeline" id="timeline"></ol>
+    </section>
+
+    <!-- ===================== SCENE 8 · TRADITIONS ======================= -->
+    <section id="traditions" class="section traditions" aria-labelledby="traditions-title">
+      <header class="section__head section__head--light">
+        <p class="eyebrow" lang="te">సంప్రదాయాలు</p>
+        <h2 id="traditions-title" class="section__title">Sacred Telugu Traditions</h2>
+        <div class="section__divider" data-ornament="divider"></div>
+        <p class="section__sub">Swipe through the rituals of the muhurtham — tap a card to learn its meaning.</p>
+      </header>
+      <div class="rail" id="traditions-rail" tabindex="0" aria-label="Wedding traditions, scroll horizontally"></div>
+      <div class="rail__controls">
+        <button class="icon-btn icon-btn--ring" type="button" data-rail="prev" aria-label="Previous tradition">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+        <div class="rail__dots" id="rail-dots" aria-hidden="true"></div>
+        <button class="icon-btn icon-btn--ring" type="button" data-rail="next" aria-label="Next tradition">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ======================== SCENE 9 · VENUE ========================= -->
+    <section id="venue" class="section venue" aria-labelledby="venue-title">
+      <header class="section__head">
+        <p class="eyebrow" lang="te">వేదిక</p>
+        <h2 id="venue-title" class="section__title">The Venue</h2>
+        <div class="section__divider" data-ornament="divider"></div>
+      </header>
+      <div class="venue__card">
+        <div class="venue__art" id="venue-art"><div data-ornament="mandapam"></div></div>
+        <div class="venue__body">
+          <h3 class="venue__name" data-bind="venueName"></h3>
+          <p class="venue__address" id="venue-address"></p>
+          <p class="venue__note" data-bind="venueNote"></p>
+          <div class="venue__actions" id="venue-actions"></div>
+        </div>
+        <div class="venue__map" id="venue-map" hidden></div>
+      </div>
+      <div class="venue__list" id="venue-list"></div>
+    </section>
+
+    <!-- ======================= SCENE 10 · GALLERY ======================= -->
+    <section id="gallery" class="section gallery" aria-labelledby="gallery-title">
+      <header class="section__head">
+        <p class="eyebrow">Moments</p>
+        <h2 id="gallery-title" class="section__title">Our Gallery</h2>
+        <div class="section__divider" data-ornament="divider"></div>
+      </header>
+      <div class="chips" id="gallery-filters" role="group" aria-label="Filter photographs"></div>
+      <div class="masonry" id="masonry"></div>
+    </section>
+
+    <!-- ==================== SCENE 12 · FINAL BLESSING =================== -->
+    <section id="blessing" class="section blessing" aria-labelledby="blessing-title">
+      <div class="blessing__gopuram" data-ornament="gopuram" aria-hidden="true"></div>
+      <div class="blessing__toranam" data-ornament="toranam" data-count="18" aria-hidden="true"></div>
+      <div class="blessing__content">
+        <div class="blessing__kolam" data-ornament="kolam" aria-hidden="true"></div>
+        <h2 id="blessing-title" class="blessing__title split-words">Your presence is our greatest blessing.</h2>
+        <p class="blessing__text">We look forward to celebrating this beautiful beginning with you.</p>
+        <div class="section__divider" data-ornament="divider"></div>
+        <p class="blessing__names"><span data-bind="groomUpper">ARJUN</span> <i>&amp;</i> <span data-bind="brideUpper">ALEKHYA</span></p>
+        <p class="blessing__date" data-bind="dateUpper">11 FEBRUARY 2027</p>
+        <div class="blessing__actions">
+          <button class="btn btn--gold share-btn" type="button"><span>Share Invitation</span></button>
+          <a class="btn btn--ghost" href="#events"><span>View Ceremonies</span></a>
+        </div>
+        <p class="blessing__hashtag" data-bind="hashtag"></p>
+      </div>
+      <div class="blessing__lamps" aria-hidden="true">
+        <div class="lamp" data-ornament="lamp"></div><div class="lamp" data-ornament="lamp"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="zari" aria-hidden="true"></div>
+    <p>Made with love for <span data-bind="namesShort">Arjun &amp; Alekhya</span> · <span data-bind="dateDisplay"></span></p>
+  </footer>
+
+  <!-- ===================== SCENE 11 · MUSIC CONTROL ===================== -->
+  <div class="music" id="music">
+    <div class="music__panel" id="music-panel" hidden>
+      <p class="music__title" id="music-title">Ambience</p>
+      <label class="music__vol"><span>Volume</span>
+        <input type="range" id="music-volume" min="0" max="1" step="0.01" value="0.5" aria-label="Music volume" />
+      </label>
+    </div>
+    <button class="music__toggle" id="music-toggle" type="button" aria-pressed="false" aria-label="Play background music">
+      <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <svg class="music__note" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l11-2v13" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="6.5" cy="18" r="2.5" fill="currentColor"/><circle cx="17.5" cy="16" r="2.5" fill="currentColor"/></svg>
+    </button>
+    <button class="music__more" id="music-more" type="button" aria-label="Music volume settings" aria-expanded="false" aria-controls="music-panel">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h10M18 8h2M4 16h2M10 16h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="16" cy="8" r="2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="8" cy="16" r="2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+    </button>
+  </div>
+
+  <!-- ============================ LIGHTBOX ============================== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+    <div class="lightbox__stage" id="lightbox-stage"><img id="lightbox-img" alt="" /></div>
+    <p class="lightbox__caption" id="lightbox-caption"></p>
+    <button class="lightbox__btn lightbox__close" type="button" data-lb="close" aria-label="Close photo viewer">✕</button>
+    <button class="lightbox__btn lightbox__prev" type="button" data-lb="prev" aria-label="Previous photo">‹</button>
+    <button class="lightbox__btn lightbox__next" type="button" data-lb="next" aria-label="Next photo">›</button>
+    <button class="lightbox__btn lightbox__zoom" type="button" data-lb="zoom" aria-label="Zoom photo" aria-pressed="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M15.5 15.5L21 21M10.5 7.5v6M7.5 10.5h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Libraries (CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+
+  <!-- Site scripts (classic scripts so the site also works when opened straight from disk) -->
+  <script src="js/config.js" defer></script>
+  <script src="js/ornaments.js" defer></script>
+  <script src="js/audio.js" defer></script>
+  <script src="js/countdown.js" defer></script>
+  <script src="js/gallery.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/interactions.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
