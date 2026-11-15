@@ -17,7 +17,7 @@ window.WEDDING_CONFIG = {
     groom: {
       name: "Arjun",
       teluguName: "అర్జున్",
-      fullName: "Arjun",
+      fullName: "Mudundi Ram Arjun Varma",
       photo: "assets/images/Arjun.jpeg", // e.g. "assets/images/arjun.webp"
       parents: "S/o Sri Mudundi Vasudeva Raju & Smt. Radhika Rani",
       intro:
@@ -26,7 +26,7 @@ window.WEDDING_CONFIG = {
     bride: {
       name: "Alekhya",
       teluguName: "అలేఖ్య",
-      fullName: "Alekhya",
+      fullName: "Mudunuru Alekhya Varma",
       photo: "assets/images/Alekhya.jpeg", // e.g. "assets/images/alekhya.webp"
       parents: "D/o Late Sri Mudunuru Venkata Narayana Raju & Smt. Nagamani",
       intro:
